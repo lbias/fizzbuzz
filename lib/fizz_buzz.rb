@@ -1,11 +1,6 @@
-def fizz_buzz(number)
-  if number % 3 == 0 and number % 5 == 0
-    'fizzbuzz'
-  elsif number % 3 == 0
-    'fizz'
-  elsif number % 5 ==0
-    'buzz'
-  else
-    number
-  end
+def fizz_buzz number
+  result = ''
+  result += 'fizz' if (number % 3).zero?
+  result += 'buzz' if (number % 5).zero?
+  result.empty?? number: result
 end
